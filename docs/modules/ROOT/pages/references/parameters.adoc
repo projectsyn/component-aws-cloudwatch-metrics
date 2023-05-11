@@ -17,3 +17,25 @@ The namespace in which to deploy this component.
 ----
 namespace: example-namespace
 ----
+
+
+== `helm_values`
+
+[horizontal]
+type:: dict
+default:: https://github.com/projectsyn/aws-cloudwatch-metrics/blob/master/class/defaults.yml[See class/defaults.yml]
+
+All helm_values are passed to the Helm chart.
+
+See the https://artifacthub.io/packages/helm/aws/aws-cloudwatch-metrics?modal=values[helm chart values] for more information.
+
+The value `clusterName` is required.
+
+
+== Example
+
+[source,yaml]
+----
+helm_values:
+  clusterName: example-cluster
+----
