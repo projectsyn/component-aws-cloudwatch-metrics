@@ -1,4 +1,12 @@
+---
 parameters:
   aws_cloudwatch_metrics:
     =_metadata: {}
     namespace: syn-aws-cloudwatch-metrics
+    name: aws_cloudwatch_metrics
+    charts:
+      aws_cloudwatch_metrics:
+        source: https://aws.github.io/eks-charts
+        version: 0.0.9
+    helm_values:
+      clusterName: CHANGEME

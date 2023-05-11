@@ -1,6 +1,22 @@
+---
 parameters:
   kapitan:
+    dependencies:
+      - type: helm
+        source: ${aws_cloudwatch_metrics:charts:aws_cloudwatch_metrics:source}
+        chart_name: aws-cloudwatch-metrics
+        version: ${aws_cloudwatch_metrics:charts:aws_cloudwatch_metrics:version}
+        output_path: ${_base_directory}/helmcharts/aws-cloudwatch-metrics/${aws_cloudwatch_metrics:charts:aws_cloudwatch_metrics:version}/
     compile:
+      - input_paths:
+          - ${_base_directory}/helmcharts/aws-cloudwatch-metrics/${aws_cloudwatch_metrics:charts:aws_cloudwatch_metrics:version}
+        input_type: helm
+        output_type: yaml
+        output_path: ${_instance}/01_aws_cloudwatch_metrics_helmchart
+        helm_values: ${aws_cloudwatch_metrics:helm_values}
+        helm_params:
+          name: aws-cloudwatch-metrics
+          namespace: ${aws_cloudwatch_metrics:namespace}
       - input_paths:
           - ${_base_directory}/component/app.jsonnet
         input_type: jsonnet

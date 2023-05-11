@@ -5,6 +5,8 @@ local inv = kap.inventory();
 // The hiera parameters for the component
 local params = inv.parameters.aws_cloudwatch_metrics;
 
-// Define outputs below
+local namespace = kube.Namespace(params.namespace);
+
 {
+  '00_namespace': namespace,
 }

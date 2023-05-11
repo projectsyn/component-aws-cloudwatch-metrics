@@ -1,3 +1,7 @@
 # Overwrite parameters here
 
 # parameters: {...}
+parameters:
+  aws_cloudwatch_metrics:
+    helm_values:
+      clusterName: test-cluster
