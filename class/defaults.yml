@@ -1,0 +1,4 @@
+parameters:
+  aws_cloudwatch_metrics:
+    =_metadata: {}
+    namespace: syn-aws-cloudwatch-metrics

@@ -1,0 +1,5 @@
+= aws-cloudwatch-metrics
+
+aws-cloudwatch-metrics is a Commodore component to manage aws-cloudwatch-metrics.
+
+See the xref:references/parameters.adoc[parameters] reference for further details.

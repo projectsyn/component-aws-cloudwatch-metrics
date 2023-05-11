@@ -1,0 +1,25 @@
+{
+  "template": "https://github.com/projectsyn/commodore-component-template.git",
+  "commit": "cfd150bd41deaa0ad10d522ec5fd0abafed65800",
+  "checkout": "main",
+  "context": {
+    "cookiecutter": {
+      "name": "aws-cloudwatch-metrics",
+      "slug": "aws-cloudwatch-metrics",
+      "parameter_key": "aws_cloudwatch_metrics",
+      "test_cases": "defaults",
+      "add_lib": "n",
+      "add_pp": "n",
+      "add_golden": "y",
+      "add_matrix": "y",
+      "add_go_unit": "n",
+      "copyright_holder": "VSHN AG <info@vshn.ch>",
+      "copyright_year": "2023",
+      "github_owner": "projectsyn",
+      "github_name": "component-aws-cloudwatch-metrics",
+      "github_url": "https://github.com/projectsyn/component-aws-cloudwatch-metrics",
+      "_template": "https://github.com/projectsyn/commodore-component-template.git"
+    }
+  },
+  "directory": null
+}

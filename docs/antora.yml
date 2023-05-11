@@ -1,0 +1,6 @@
+name: aws-cloudwatch-metrics
+title: aws-cloudwatch-metrics
+version: master
+start_page: ROOT:index.adoc
+nav:
+  - modules/ROOT/partials/nav.adoc
