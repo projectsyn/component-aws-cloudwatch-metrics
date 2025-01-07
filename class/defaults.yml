@@ -1,7 +1,8 @@
 ---
 parameters:
   aws_cloudwatch_metrics:
-    =_metadata: {}
+    =_metadata:
+      multi_tenant: true
     namespace: syn-aws-cloudwatch-metrics
     name: aws_cloudwatch_metrics
     charts:
