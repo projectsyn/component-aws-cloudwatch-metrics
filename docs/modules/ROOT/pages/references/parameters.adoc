@@ -23,7 +23,7 @@ namespace: example-namespace
 
 [horizontal]
 type:: dict
-default:: https://github.com/projectsyn/aws-cloudwatch-metrics/blob/master/class/defaults.yml[See class/defaults.yml]
+default:: https://github.com/projectsyn/component-aws-cloudwatch-metrics/blob/master/class/defaults.yml[See class/defaults.yml]
 
 All helm_values are passed to the Helm chart.
 
